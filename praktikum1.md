@@ -1,3 +1,4 @@
+# praktikum 1
 Praktikumis installeerisin Virtualbox tarkvara ja paigaldasin selle extentioni eestikeelsesse Windows 11 pro educationi.
 
 ![image](https://github.com/aleksiua/opsys2023/assets/145049882/1d8d00b5-cbb6-47bb-b98e-15f654f19d7a)
