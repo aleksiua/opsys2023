@@ -1,8 +1,10 @@
+
+
 <img width="959" alt="opsis4" src="https://github.com/aleksiua/opsys2023/assets/145049882/df4cc80b-8ca5-4bac-9319-0c954b7bb8c1">
 <img width="959" alt="opsis4 1" src="https://github.com/aleksiua/opsys2023/assets/145049882/1a3b72de-1a5a-4062-b79a-06e42e207a4b">
 <img width="959" alt="opsis4 3" src="https://github.com/aleksiua/opsys2023/assets/145049882/c665b78b-caac-46a0-af7f-c7d9b0706af4">
 SYSTEMi õigusi on vaja näiteks ajatsooni muutmiseks või, et luua sümboolseid linke.
-<img width="379" alt="opsis4 5 1" src="https://github.com/aleksiua/opsys2023/assets/145049882/b86779fa-e4f5-4573-b9c7-e34de685ae4b">
+<img width="959" alt="opsis4 5" src="https://github.com/aleksiua/opsys2023/assets/145049882/7b4a4f96-255a-4e34-91c1-ef3d78d11512">
 Microsoft soovitab häälestada OneDrive'i failitaastesuvandid lunavararünnaku korral. Viiruse- ja ohutõrje heaks peaks seda tegema.
 <img width="959" alt="opsis4 7" src="https://github.com/aleksiua/opsys2023/assets/145049882/5bc995e1-b0c7-4a57-9ad6-de1378a2d8fe">
 <img width="959" alt="opsis4 8" src="https://github.com/aleksiua/opsys2023/assets/145049882/13e9d79d-78f1-4123-ae41-097abaf9e64f">
