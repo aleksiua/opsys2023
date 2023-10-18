@@ -1,3 +1,4 @@
+
 Linuxi failiõigused  
 Praktikumis harjutasin Linuxi käsurea kirjutamist ja erinevate kasutajate õiguste haldamist.  
 5.1 a) Faili lugemiseks on kasutajal vaja +r õigusi.  
