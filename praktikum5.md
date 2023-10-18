@@ -1,6 +1,6 @@
 
-Linuxi failiõigused  
-Praktikumis harjutasin Linuxi käsurea kirjutamist ja erinevate kasutajate õiguste haldamist.  
+Linuxi failiõigused       
+Praktikumis harjutasin Linuxi käsurea kirjutamist ja erinevate kasutajate õiguste haldamist.     
 5.1 a) Faili lugemiseks on kasutajal vaja +r õigusi.  
 b) Faili kustutamiseks ei vaja kasutaja ühtegi õigust.  
 5.2 Sellest õigusest ei piisa, kuna skripti on vaja ka lugeda ja selle käsuga ei ole 
