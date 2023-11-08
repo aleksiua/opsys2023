@@ -1,5 +1,5 @@
 # opsys2023
-Uurisine, kuidas lokaalseid ja võrgukettaid Windowsi ja Linuxi keskkonnas kasutada. Õppisin paremini tundma mount-käske ning USB-ga töötamist.  
+Uurisin, kuidas lokaalseid ja võrgukettaid Windowsi ja Linuxi keskkonnas kasutada. Õppisin paremini tundma mount-käske ning USB-ga töötamist.  
   
 1. Andmekandjad vajavad lähtestamist, et tagada andmete turvalisus ja privaatsus. Ilma lähtestamata võivad teie andmed sattuda halbadesse kätesse.
 2. GPT kasutamise eelised võrreldes MBRiga on järgmised: GTP kõvaketta maht on suurem. GTP pakub suuremat kaitset andmete kadumise vastu, kuna ta suudab parandada rikutud partitisioone. GTP toetab rohkem partitisioone, MBR toetab kuni nelja, GTP tuhandeid. Suurte andmekandjate puhul tuleb see kasuks, kui on vaja mitmeid partitsioone haldada.8  
