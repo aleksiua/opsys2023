@@ -11,7 +11,7 @@
 | Milline on kõige rohkem füüsilist mälu (working set) võttev protsess? |  | explorer |  | Get-Process \| Sort-Object WorkingSet -Descending \| Select-Object -First 1 \| Format-Table -Property Id, ProcessName, WorkingSet -AutoSize |
 | Kui palju füüsilisest mälust (Physical Memory) on vaba? |  | 1473 MB |  | cmd, systeminfo \| find "Physical Memory" |
 | Kui palju on põhikettal (C:, /) vaba ruumi mahult (GB) ja protsentuaalselt? |  | 35 GB, 55% |  | file explorer, see arvuti |
-| Milline on kõige suurem kõvakettal olev fail ja kõige suurem alamkaust? |  |  |  |  |
+| Milline on kõige suurem kõvakettal olev fail ja kõige suurem alamkaust? |  | Windows, pagefile.sys |  | WinDirStat, minu kompuuter, C:, Vaatasin kaste. |
 | Võrrelge terminali käskude: sha1sum /dev/zero \| sha1sum /dev/zero ja sha1sum /dev/urandom \| sha1sum /dev/urandom protsessori kasutust. Võrdluseks avage teine terminaliaken ja top samaaegseks käivitamiseks. Uurige, millisele CPU alamtegevusele us, sy, id, wa, st jne kulub enim protsessori aega ja mitu protsenti kulub kummagi käsu korral. (Ainult Linuxis) Lisa ka ekraanipilt aruande juurde näiteks pärast tabelit. |  |  |  |  |
 | Vasta järgnevatele alamküsimustele: (Ainult Windowsis) |  |  |  |  |
 | Milline protsess kõige rohkem salvestusseadmele kirjutab? |  |  |  |  |
