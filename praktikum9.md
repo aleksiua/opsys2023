@@ -20,3 +20,4 @@
 | Millisest failist eelmise küsimuse protsess kõige rohkem loeb? |  |  |  |  |
 | Millise protsessi poolt tekitatud võrguliiklus on suurima mahuga? Vali antud protsessi poolt kasutatavatest ühendustest üks ning kirjuta välja järgnev: kohalik IP-aadress, kohalik port, ühenduse teise poole IP-aadress, port, latents ja antud ühenduse poolt kasutatav võrguliikluse kogumaht. (Ainult Windowsis) Lisa ka ekraanipilt aruande juurde näiteks pärast tabelit. |  |  |  |  |
 | Sõber kurdab, et tema arvuti on oluliselt aeglasemaks muutunud. Milliseid konkreetseid programme või käsureakäske kasutad põhjustaja tuvastamiseks. Mõlemal juhul kirjuta, mida konkreetselt jälgid (nt mis aken, veerud, numbrid jne). (Vali Linuxis või Windowsis) |  |  |  |  |
+![image](https://github.com/aleksiua/opsys2023/assets/145049882/06f76fdd-1cff-464b-9100-e76603815fd7)
