@@ -1,10 +1,10 @@
 # opsys2023
 | **Küsimus** | **Linux** | **Windows** | **Linuxis kasutatud käsklus** | **Windowsis kasutatud käsklus** |
 |---|---|---|---|---|
-| Mitu protsessi kokku arvutis käib? |  |  |  |  |
-| Milline on kõige esimesena käivitatud protsess? (lisalugemine: init vs systemd) |  |  |  |  |
-| Milliste kasutajate protsesse arvutis käib? (arvesta ka süsteemiprotsesse, mitte ainult sisse logitud kasutajaid) |  |  |  |  |
-| Kui kaua on arvuti järjest töötanud (up time)? (Alternatiivselt võib vastata ka, millal (kuupäev ja kellaaeg) arvuti viimati käima pandi.) |  |  |  |  |
+| Mitu protsessi kokku arvutis käib? | 226 | 128 | ps -aux \| wc -l | Tegumihaldur, jõudlus |
+| Milline on kõige esimesena käivitatud protsess? (lisalugemine: init vs systemd) | /sbin/init/splash | sihost | ps axo pid,cmd,comm,etime | Poweshell, Get-Process \| select Name, StartTime |
+| Milliste kasutajate protsesse arvutis käib? (arvesta ka süsteemiprotsesse, mitte ainult sisse logitud kasutajaid) |  | SYSTEM, Annabel, UMFD-1, UMFD-0, LOCAL SERVICE, NETWORK SERVICE |  | Tegumihaldur, üksikasjad |
+| Kui kaua on arvuti järjest töötanud (up time)? (Alternatiivselt võib vastata ka, millal (kuupäev ja kellaaeg) arvuti viimati käima pandi.) |  | 22.11.2023 10:34:57 |  | Powershell, Get-CimInstance -ClassName Win32_OperatingSystem \| Select-Object LastBootUpTime |
 | Milline protsess käivitati kõige hiljem (viimasena)? (Mitte võtta arvesse programmi, millega seda infot otsida.) |  |  |  |  |
 | Milline on kõige rohkem protsessoriaega võttev protsess? |  |  |  |  |
 | Milline on kõige rohkem virtuaalmälu (aadressiruumi, commit, Virtual Size) võttev protsess? |  |  |  |  |
