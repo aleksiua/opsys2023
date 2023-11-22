@@ -1,4 +1,5 @@
 # opsys2023
+Selles praktikumis  õppisin lähemalt powershelli ja tegumihaldurit kasutama. Õppisin ka mälust ja protsessoritest uusi asju.
 | **Küsimus** | **Linux** | **Windows** | **Linuxis kasutatud käsklus** | **Windowsis kasutatud käsklus** |
 |---|---|---|---|---|
 | Mitu protsessi kokku arvutis käib? | 226 | 128 | ps -aux \| wc -l | Tegumihaldur, jõudlus |
