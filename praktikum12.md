@@ -27,7 +27,7 @@ for i in *.$vana_laiend; do
     fi  
 done    
 4. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/381e4ead-d572-4928-95fb-d0ad9a7fcd78)  
-5. ... 
+5. ´´´
 if [ "$#" -ne 2 ]; then
     echo "Kasutamine: $0 <vana_laiend> <uus_laiend>"
     exit 1
@@ -43,4 +43,4 @@ for i in *.$vana_laiend; do
         echo "Fail ümbernimetatud: $i -> $uus_nimi"
     fi
 done
-...
+´´´
