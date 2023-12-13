@@ -16,21 +16,20 @@ echo "matriklinumber"
 3.  ![image](https://github.com/aleksiua/opsys2023/assets/145049882/dec895ea-152a-4d5c-b292-0ee19fb67adc)
 4.  
 ```
-if [ "$#" -ne 2 ]; then
-    echo "Kasutamine: $0 <vana_laiend> <uus_laiend>"
-    exit 1
-fi
+#!/bin/bash
 
-vana_laiend=$1
-uus_laiend=$2
+vana_fail=$1
+uus_fail=$2
 
-for i in *.$vana_laiend; do
-    if [ "${i##*.}" = "$vana_laiend" ]; then
-        uus_nimi="${i%.$vana_laiend}.$uus_laiend"
-        mv "$i" "$uus_nimi"
-        echo "Fail ümbernimetatud: $i -> $uus_nimi"
+for file in *.$vana_fail; do
+    if [ -f "$file" ]; then
+        uus_fail="${file%.$vana_fail}.$uus_fail"
+        mv "$file" "$uus_fail"
+        echo "Fail $file nimetati ümber failiks $uus_fail" 
     fi
 done
+
 ```
-4. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/381e4ead-d572-4928-95fb-d0ad9a7fcd78)  
+4. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/1d4c1443-2454-477f-b341-c71d757a35cb)
+
 5. 
