@@ -31,5 +31,22 @@ done
 
 ```
 4. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/1d4c1443-2454-477f-b341-c71d757a35cb)
-
 5. 
+
+```
+#!/bin/bash
+
+otsitav=$1
+pids=$(pgrep "$otsitav")
+
+if [ -n "$pids" ]; then
+    for pid in $pids; do
+        process=$(ps -p "$pid" -o comm=)
+        echo "Protsessi nimi: $process, PID: $pid"
+    done
+else
+    echo "Protsessi nimega '$otsitav' ei leitud."
+fi
+```
+5. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/a20bcde4-c7c4-43b8-ac75-2abf9de209f2)  
+
