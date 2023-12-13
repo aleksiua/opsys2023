@@ -76,7 +76,6 @@ echo "9^5 = $tulemus"
 8.  7. ```
        #!/bin/bash
 
-# Defineerime funktsiooni astenda, mis võtab vastu kaks argumenti: alus ja astendaja
 function astenda {
     if (( $2 == 0 )); then
         echo 1
@@ -85,7 +84,6 @@ function astenda {
     fi
 }
 
-# Väljastame 9^5 väärtuse, kasutades loodud funktsiooni
 tulemus=$(astenda 9 5)
 echo "9^5 = $tulemus"
 ```
