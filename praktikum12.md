@@ -50,3 +50,24 @@ fi
 ```
 5. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/a20bcde4-c7c4-43b8-ac75-2abf9de209f2)  
 
+6.
+```
+#!/bin/bash
+
+astenda() {
+  base=$1
+  exponent=$2
+  result=1
+
+  while [ $exponent -gt 0 ]; do
+    result=$(($result * $base))
+    exponent=$(($exponent - 1))
+  done
+
+  echo $result
+}
+
+tulemus=$(astenda 9 5)
+echo "9^5 = $tulemus"
+```
+6. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/5675360e-8f9c-4794-a638-62502106f42f)
