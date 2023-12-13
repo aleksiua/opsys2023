@@ -10,8 +10,8 @@ read matriklinumber
 echo "$nimi"  
 echo "$eriala"  
 echo "matriklinumber"  
-3.  ![image](https://github.com/aleksiua/opsys2023/assets/145049882/dec895ea-152a-4d5c-b292-0ee19fb67adc)
-4.  4. if [ "$#" -ne 2 ]; then
+3.  ![image](https://github.com/aleksiua/opsys2023/assets/145049882/dec895ea-152a-4d5c-b292-0ee19fb67adc)  
+4.  if [ "$#" -ne 2 ]; then
     echo "Kasutamine: $0 <vana_laiend> <uus_laiend>"
     exit 1
 fi
