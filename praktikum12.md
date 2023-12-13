@@ -75,7 +75,6 @@ echo "9^5 = $tulemus"
 7. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/30a49d22-7d19-44e3-bfb0-8d2b89082a80)
 8.  7. ```
        #!/bin/bash
-
 function astenda {
     if (( $2 == 0 )); then
         echo 1
@@ -83,7 +82,6 @@ function astenda {
         echo $(($1 * $(astenda $1 $(($2 - 1)))))
     fi
 }
-
 tulemus=$(astenda 9 5)
 echo "9^5 = $tulemus"
 ```
