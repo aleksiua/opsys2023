@@ -71,3 +71,21 @@ tulemus=$(astenda 9 5)
 echo "9^5 = $tulemus"
 ```
 6. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/5675360e-8f9c-4794-a638-62502106f42f)
+7. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/03776194-4269-49d5-a447-669ab63cc5e1)
+7. ![image](https://github.com/aleksiua/opsys2023/assets/145049882/30a49d22-7d19-44e3-bfb0-8d2b89082a80)
+8.  7. ```
+       #!/bin/bash
+
+# Defineerime funktsiooni astenda, mis võtab vastu kaks argumenti: alus ja astendaja
+function astenda {
+    if (( $2 == 0 )); then
+        echo 1
+    else
+        echo $(($1 * $(astenda $1 $(($2 - 1)))))
+    fi
+}
+
+# Väljastame 9^5 väärtuse, kasutades loodud funktsiooni
+tulemus=$(astenda 9 5)
+echo "9^5 = $tulemus"
+```
