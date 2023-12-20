@@ -220,7 +220,7 @@ Arvuti kuupäev ja kellaaeg: 2023-12-20 11:54:45
 
 ```
 
-1. #Leidsin masina nime, PowerShelli versiooni ja Windowsi versiooni käskudega ning tegin nad muutujateks.
+1. Leidsin masina nime, PowerShelli versiooni ja Windowsi versiooni käskudega ning tegin nad muutujateks.
 
 2. Lõin võrgukonfiguratioonile muutujad, leides Get-käsuga vajalikud andmed ja eraldi maci aadressi.
 
