@@ -1,42 +1,33 @@
+1. 
 ```
 
-# Masina nimi, PowerShelli versioon ja Windowsi versioon
 $hostname = $env:COMPUTERNAME
 $psVersion = $PSVersionTable.PSVersion.ToString()
 $osVersion = (Get-CimInstance -ClassName Win32_OperatingSystem).Caption
 
-# Võrgu konfiguratsioon
 $networkConfig = Get-NetIPConfiguration | Select-Object -Property IPAddress, PrefixLength, DefaultGateway, Dhcp, InterfaceAlias
 $macAddress = (Get-NetAdapter | Where-Object { $_.Status -eq 'Up' }).MacAddress
 
-# Arvuti protsessori ja RAM info
 $computerSystem = Get-WmiObject -Class Win32_ComputerSystem
 $processor = $computerSystem.Description
 $ram = "{0:N2} GB" -f ($computerSystem.TotalPhysicalMemory / 1GB)
 
-# Graafikakaardi info
 $graphicsInfo = Get-CimInstance -ClassName Win32_VideoController | Select-Object -Property Name, DriverVersion, DriverDate, VideoModeDescription
 
-# Arvuti kõvaketaste informatsioon (ainult C-ketas)
 $diskInfo = Get-WmiObject -Class Win32_LogicalDisk | Where-Object { $_.DeviceID -eq 'C:' } | Select-Object -Property VolumeName, Size, FreeSpace
 
-# PCI-seadmete draiverite info
 $pciDevices = Get-WmiObject -Class Win32_PnPEntity | Where-Object { $_.ConfigManagerErrorCode -eq 0 } | Select-Object -Property Description, Manufacturer, DriverVersion
 
-# Arvutis olevad kasutajad
 $users = Get-WmiObject -Class Win32_UserAccount | Select-Object -Property Name, Description, LocalAccount, Disabled
 
-# Käimasolevate protsesside arv
 $processCount = (Get-Process).Count
 
-# 10 viimast käivitatud protsessi
+
 $recentProcesses = Get-WmiObject Win32_Process | Sort-Object -Property CreationDate -Descending | Select-Object -First 10 -Property Name, ProcessId, CreationDate
 
 
-# Arvuti kuupäev ja kellaaeg
 $currentDateTime = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
-# Faili loomine ja info salvestamine
 $outputPath = "C:\Users\Annabel\praktikum.txt"
 Set-Content -Path $outputPath -Value @"
 Arvuti info:
@@ -80,6 +71,13 @@ $($recentProcesses | Format-Table | Out-String)
 Arvuti kuupäev ja kellaaeg: $currentDateTime
 "@
 
+
+```
+
+
+
+2. 
+```
 Arvuti info:
 ---------------------
 Masina nimi: ALEKSIUS-W11
@@ -102,7 +100,7 @@ Draiveri versioon: 7.0.10.8379
 Draiveri kuupäev: 07/12/2023 03:00:00
 Ekraani lahutus: 1148 x 1000 x 4294967296 colors
 
-Kõvaketta info:
+Kõvaketta info: 
 Partitsioon: 
 Mahutavus: 63.2246055603027 GB
 Vaba ruum C:-kettal: 33.2716636657715 GB
@@ -220,7 +218,30 @@ msedge.exe                  3008 20231220112238.827351+120
 
 Arvuti kuupäev ja kellaaeg: 2023-12-20 11:54:45
 
-
 ```
+
+1. #Leidsin masina nime, PowerShelli versiooni ja Windowsi versiooni käskudega ning tegin nad muutujateks.
+
+2. Lõin võrgukonfiguratioonile muutujad, leides Get-käsuga vajalikud andmed ja eraldi maci aadressi.
+
+3. leidsin arvuti protsessori ja RAM info gigabaitides ning tegin nad muutujateks.
+
+4. Graafikakaardi info said ma Get-käsuga, kasutades taas Select-Objectit, et välja sorteerida vajalik.
+
+5. Arvuti kõvaketaste informatsiooni (ainult C-kettalt) sain sarnaselt eelmisega, rakendades ja Where-Objectit, et valida C-ketas.
+
+6. PCI-seadmete draiverite info saamiseks kasutasin eelmisega harjutusega sarnaseid käske, erinevaid asju otsides.
+   
+7. Arvutis olevad kasutajad ja nende info sain Get-käsuga.
+
+8. Käimasolevate protsesside arvu sain lühikese Get-käsuga.
+
+9. 10 viimast käivitatud protsessi sain Get-käsu, Sort- ja Select-Objectiga, kus valisin vajalikud andmed ja sorteerisin need eelnevalt, et saada just viimaseid protsesse.
+
+10. Arvuti kuupäeva ja kellaja sain Get-käsuga ja formaadiks panin aasta-kuu-päev tund:minut:sekund
+
+11. Faili loomine ja info salvestamiseks valisin uue faili nimeks praktikum.txt ja kirjutasin @" vahele info nagu nt Masina nimi: ja selle järele $ muutuja, mille olin varasemalt loonud.
+
+
 
 
